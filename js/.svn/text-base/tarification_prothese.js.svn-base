@@ -1,0 +1,200 @@
+// recherche d'un patient dans une tarification 
+function tarificationRecherchePatient(pseudo) {
+	if(trim(pseudo).length >= 1) {
+		$('patientBox').innerHTML = "<img class='centerimage' src='../images/attente.gif'/>";
+		new Ajax.Request('../lib/tarification_recherche_patient.php',
+		{
+			method:'get',
+			parameters: {pseudo: htmlentities(pseudo)},
+			asynchronous : true,
+			requestHeaders: {Accept: 'application/json'},
+  			onSuccess: function(transport, json){
+  				content = json.root.content;
+    			patientMenu = json.root.patientMenu;
+    			titulaireMenu = json.root.titulaireMenu;
+				$('patientBox').innerHTML = content;
+				$('patientMenu').innerHTML = patientMenu;
+				$('titulaireMenu').innerHTML = titulaireMenu;
+		    },
+		    onFailure: function(){ $('patientBox').innerHTML = ('Erreur... contact targoo@gmail.com') }
+		});
+	} else {
+		$('patientBox').innerHTML = '';
+		$('patientMenu').innerHTML = "<a class='yuimenuitemlabel' href='../patients/recherche_patient.php'>Recherche et modification du patient</a>";
+		$('titulaireMenu').innerHTML = "<a class='yuimenuitemlabel' href='../patients/recherche_patient.php'>Recherche et modification du titulaire</a>";
+	}
+}
+
+
+// recherche d'un patient apres un choix dans la liste
+function tarificationRecherchePatientList(id)  {
+	if(id != '') {
+		$('patientBox').innerHTML = "<img class='centerimage' src='../images/attente.gif'/>";
+		new Ajax.Request('../lib/tarification_recherche_patient.php',
+		{
+			method:'get',
+			parameters: {id: id},
+			requestHeaders: {Accept: 'application/json'},
+  			onSuccess: function(transport, json){
+    			content = json.root.content;
+    			patientMenu = json.root.patientMenu;
+    			titulaireMenu = json.root.titulaireMenu;
+				$('patientBox').innerHTML = content;
+				$('patientMenu').innerHTML = patientMenu;
+				$('titulaireMenu').innerHTML = titulaireMenu;
+		    },
+		    onFailure: function(){ $('patientBox').innerHTML = ('Erreur... contact targoo@gmail.com') }
+		});
+	} else {
+		$('patientBox').innerHTML = '';
+		$('patientMenu').innerHTML = "<a class='yuimenuitemlabel' href='../patients/recherche_patient.php'>Recherche et modification du patient</a>";
+		$('titulaireMenu').innerHTML = "<a class='yuimenuitemlabel' href='../patients/recherche_patient.php'>Recherche et modification du titulaire</a>";
+	}
+}
+
+
+// recherche et modification du patient
+function tarificationModificationPatientList(id) {
+	window.location.href="../patients/modif_patient.php?id="+id;
+}
+
+
+// recherche d'un type dans une tarification et mise en session du type//
+function tarificationRechercheType(pseudo) {
+	new Ajax.Request('../lib/tarification_recherche_type.php',
+		{
+			method:'get',
+			parameters: {pseudo: pseudo},
+  			onSuccess: function(transport, json){
+		    },
+		    onFailure: function(){ $('medecinBox').innerHTML = ('Erreur... contact targoo@gmail.com') }
+		});
+}
+
+
+// recherche d'un medecin dans une tarification 
+function tarificationRechercheMedecin(pseudo){
+	if(trim(pseudo) != '') {
+		$('medecinBox').innerHTML = "<img class='centerimage' src='../images/attente.gif'/>";
+		new Ajax.Request('../lib/tarification_recherche_medecin.php',
+		{
+			method:'get',
+			parameters: {pseudo: htmlentities(pseudo)},
+			requestHeaders: {Accept: 'application/json'},
+  			onSuccess: function(transport, json){
+    			content = json.root.content;
+				$('medecinBox').innerHTML = content;
+		    },
+		    onFailure: function(){ $('medecinBox').innerHTML = ('Erreur... contact targoo@gmail.com') }
+		});
+	} else {
+		$('medecinBox').innerHTML = '';
+	}
+}
+
+
+// recherche d'un medecin apres un choix dans la liste
+function tarificationRechercheMedecinList(inami)  {
+	if(inami != '') {
+		$('medecinBox').innerHTML = "<img class='centerimage' src='../images/attente.gif'/>";
+		new Ajax.Request('../lib/tarification_recherche_medecin.php',
+		{
+			method:'get',
+			parameters: {inami: inami},
+			requestHeaders: {Accept: 'application/json'},
+  			onSuccess: function(transport, json){
+    			content = json.root.content;
+				$('medecinBox').innerHTML = content;
+		    },
+		    onFailure: function(){ $('medecinBox').innerHTML = ('Erreur... contact targoo@gmail.com') }
+		});
+	} else {
+		$('medecinBox').innerHTML = '';
+	}
+}
+
+
+// print etiquette
+function etiquettePrint(nombre) {
+  	if(nombre != '') {
+		//$('etiquetteLabel').innerHTML = "<img class='centerimage' src='../images/attente.gif'/>";
+		var iframe = "<iframe name='' SRC='../etiquettes/print_etiquette.php?nombre="+ escape (nombre) +"' scrolling='no' height='1' width='1' FRAMEBORDER='no'></iframe>";
+		$('etiquetteLabel').innerHTML = iframe;
+		$('etiquette').value = '0';
+	}
+}
+
+
+// load tarificaion ou prothese
+function loadTarification (type,value,id,input){
+	var myAjax = new Ajax.Request('../lib/load_tarification.php',
+		{
+			method:'get',
+			parameters: {type: type, value: $(input).value},
+			onLoading: function () { // Requête envoyée
+            	$(id).innerHTML = "<img class='centerimage' src='../images/attente.gif'/>"+Ajax.activeRequestCount;
+          	},
+          	onSuccess: function(transport){
+          		if ($(input).value==value){
+			    	var response = transport.responseText || "aucune tarification";
+			      	$(id).innerHTML = response;
+          		} else {
+	            	$(id).innerHTML = "<img class='centerimage' src='../images/attente.gif'/>"+Ajax.activeRequestCount;
+          		}
+		    },
+		    onFailure: function(){ document.getElementById(id).innerHTML = ('Something went wrong...') }
+		});
+}
+
+
+
+// recherche et validation d'un cecodi dans le formulaire
+function tarificationCheckCecodi(cecodi_input) {
+	if (cecodi_input=='') {
+		$('cecodi_desc').innerHTML = "";
+	} else {
+		$('cecodi_desc').innerHTML = "<img class='centerimage' src='../images/attente.gif'/>";
+		new Ajax.Request('../lib/tarification_check_prestation_code.php',
+			{
+				method:'get',
+				parameters: {cecodi_input:cecodi_input ,element : 'cecodi_input'},
+				asynchronous:false,
+				requestHeaders: {Accept: 'application/json'},
+	  			onSuccess: function(transport, json){
+	  				$('cecodi_desc').innerHTML = json.root.cecodi_desc;
+	    			if (json.root.cecodi_input!='') $('cecodi_input').value = json.root.cecodi_input;
+	    			$('BoxAddCecodi').setAttribute("class",json.root.class);
+	    	    },
+			    onFailure:  function(){ alert("failure");} 
+			});
+	}
+}
+
+// list
+function tarificationCheckCecodiList(element,cecodi) {
+	$(element).value = cecodi;
+	$(element).focus();
+	tarificationCheckCecodi(cecodi);
+}
+
+
+// recherche et validation d'un cecodi dans le popup
+function tarificationCheckCecodiPopUp(cecodi_input) {
+	if (cecodi_input=='') {
+		$('popup_description').innerHTML = "";
+	} else {
+		$('popup_description').innerHTML = "<img class='centerimage' src='../images/attente.gif'/>";
+		new Ajax.Request('../lib/tarification_check_prestation_code.php',
+			{
+				method:'get',
+				parameters: {cecodi_input:cecodi_input, element : 'popup_cecodi'},
+				asynchronous:false,
+				requestHeaders: {Accept: 'application/json'},
+	  			onSuccess: function(transport, json){
+	  				$('popup_description').innerHTML = json.root.cecodi_desc;
+	    			if (json.root.cecodi_input!='') $('popup_cecodi').value = json.root.cecodi_input;
+	    	    },
+			    onFailure:  function(){ alert("failure");} 
+			});
+	}
+}

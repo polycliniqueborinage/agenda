@@ -1,0 +1,1626 @@
+#Box{
+ border-top:1px solid #316ac5;
+ border-left:1px solid #316ac5;
+ border-right:1px solid #316ac5;
+ border-bottom:1px solid #316ac5;
+ background: #b5cbe7;
+ font-size: 16px;
+ margin-top: 1px;
+ margin-left: 2px;
+ margin-right: 2px;
+ text-align: center;
+}
+
+#Box th.green{
+ background-color:#c5f7c5;
+ padding: 10px 25px 10px 25px;
+}
+
+#Box th.green.patient{
+ background-image: url(../images/24x24/patient.gif);
+ background-repeat: no-repeat;
+ background-position: left;
+}
+
+#Box th.green.medecin{
+ background-image: url(../images/24x24/medecin.gif);
+ background-repeat: no-repeat;
+ background-position: left;
+}
+
+#BoxTitlePatient,
+#BoxTitleMedecin,
+#BoxTitleTarification,
+#BoxCaisse {
+ border-top:1px solid #316ac5;
+ border-left:1px solid #316ac5;
+ border-right:1px solid #316ac5;
+ border-bottom:1px solid #316ac5;
+ padding: 7px 25px 7px 25px; //bottom right top left;
+ background: #b5cbe7;
+ font-weight: bold;
+ font-size: 16px;
+ margin-top: 1px;
+ margin-left: 2px;
+ margin-right: 2px;
+ cursor: pointer;
+}
+
+
+#BoxAddCecodi{
+ border-top:1px solid #316ac5;
+ border-left:1px solid #316ac5;
+ border-right:1px solid #316ac5;
+ padding: 7px 25px 7px 25px; //bottom right top left;
+ background: #b5cbe7;
+ font-weight: bold;
+ font-size: 16px;
+ margin-top: 1px;
+ margin-left: 2px;
+ margin-right: 2px;
+ cursor: pointer;
+}
+
+#BoxTitlePatient.patient{
+ background-image: url(../images/24x24/patient.gif);
+ background-repeat: no-repeat;
+ background-position: left;
+}
+
+#BoxTitleMedecin.medecin{
+ background-image: url(../images/24x24/medecin.gif);
+ background-repeat: no-repeat;
+ background-position: left;
+}
+
+#BoxTitleTarification.tarification{
+ background-image: url(../images/24x24/cecodis.gif);
+ background-repeat: no-repeat;
+ background-position: left;
+}
+
+#BoxAddCecodi.cecodi{
+ background-image: url(../images/24x24/cecodis.gif);
+ background-repeat: no-repeat;
+ background-position: left;
+}
+
+#BoxCaisse.caisse{
+ background-image: url(../images/24x24/caisse.gif);
+ background-repeat: no-repeat;
+ background-position: left;
+}
+
+
+#medecinImageLeft.open,
+#patientImageLeft.open {
+ height: 20px;
+ width: 20px;
+ float:right;
+ background-color:transparent;
+ position:relative;
+ top:-20px;
+ background-image: url(../images/open.gif);
+ background-repeat: no-repeat;
+}
+
+#medecinImageLeft.close,
+#patientImageLeft.close {
+ height: 20px;
+ width: 20px;
+ float:right;
+ background-color:transparent;
+ position:relative;
+ top:-20px;
+ background-image: url(../images/close.gif);
+ background-repeat: no-repeat;
+}
+
+#BoxContentPatient,
+#BoxContentTarification,
+#BoxContentMedecin{
+ padding: 7px 25px 7px 25px; //bottom right top left;
+ background-color:#c5f7c5;
+ border-left:1px solid #316ac5;
+ border-right:1px solid #316ac5;
+ border-bottom:1px solid #316ac5;
+ margin-left: 2px;
+ margin-right: 2px;
+ font-weight: bold;
+}
+
+#BoxContentPatient #pic {
+position: absolute;
+top: 220px;
+right: 260px;
+}
+
+#BoxListCecodi{
+ padding: 7px 25px 7px 25px; //bottom right top left;
+ background-color:#c5f7c5;
+ border-top:1px solid #316ac5;
+ border-left:1px solid #316ac5;
+ border-right:1px solid #316ac5;
+ border-bottom:1px solid #316ac5;
+ margin-left: 2px;
+ margin-right: 2px;
+ font-weight: bold;
+}
+
+#BoxContentPatient b,
+#BoxContentMedecin b{
+ color: #316ac5;
+ font-weight: normal;
+}
+
+#BoxCaisse tr,
+#BoxAddCecodi tr {
+}
+
+#BoxCaisse th,
+#BoxAddCecodi th {
+ background: transparent;
+}
+
+#BoxListCecodi td,
+#BoxCaisse td,
+#BoxAddCecodi td {
+ background: transparent;
+}
+
+
+#BoxListCecodi tr {
+}
+
+#BoxListCecodi th {
+ background: transparent;
+}
+
+#BoxListCecodi td {
+ background: transparent;
+}
+
+
+
+
+
+.texte .abstract{
+	text-align:left;
+	margin:0;
+	padding:0 1em;
+}
+
+.texte .auteur{
+margin:2em 0 0 3em;
+padding-left: 3em;
+}
+
+
+.texte .auteur ul{
+color:#000;
+background-color:transparent;
+margin:0 0 0 2em;
+padding:0 1em;
+border-left:4px solid #fff;
+}
+
+.texte .auteur li{
+font-size:14px;
+border-bottom:1px dotted #999;
+list-style:none;
+background-color:transparent;
+}
+
+.texte .auteur li.dernier{
+border-bottom:0;
+}
+
+.texte .auteur strong{
+font-size:medium;	
+font-weight:bold;
+color:#000;
+}
+
+.texte hr{
+display:none;
+}
+
+.texte li{
+list-style:disc;
+}
+
+.texte a{
+color:#000;
+background-color:transparent;
+}
+
+.texte a:hover{
+color:#fff;
+background-color:transparent;
+/*text-decoration:none;*/
+}
+
+#avatar{
+position: absolute;
+padding-top: 30px;
+}
+
+#links{
+position: relative;
+float :right;
+padding-right :5px;
+}
+
+.alert {
+	color: red;
+}
+
+
+.button {
+	border : solid 1px #cccccc;
+	background: #f8e9c6;
+	color : #000000;
+	font-weight : bold;
+	font-size : 11px;
+	width: 180px;
+	padding: 4px;
+	cursor: pointer;
+}
+
+.button:hover {
+	border : solid 1px #6cc06c;
+	background: #c5f7c5;
+	color : #000000;
+	font-weight : bold;
+	font-size : 11px;
+	padding: 4px;
+}
+
+
+/* Sharing Tabs
+   =========================== */
+
+#sharing_main #default-sharing {
+margin: 8px 0 -5px 0;
+font: bold 14px arial;
+color: #444;
+}
+
+#sharing_main p {
+font: normal 12px arial;
+margin: 8px 0 3px 0;
+}
+
+#default-sharing strong {
+color: #000;
+background: #ffa;
+padding: 2px;
+}
+
+#default-sharing a {
+font-size: 12px;
+}
+
+.grid {
+width: 100%;
+}
+
+.grid th {
+color: #fff;
+}
+
+.two-column th {
+width: 15%;
+}
+
+.one-column th {
+width: 30%;
+}
+
+.grid th.column-1 {
+background: #666;
+}
+
+.grid th.column-2 {
+background: #999;
+}
+
+.grid td {
+text-align: center;
+height: 18px;
+}
+
+.grid td.column-1 {
+background: #ccc;
+border-bottom: solid 1px #aaa;
+}
+
+.grid td.column-2 {
+background: #ddd;
+border-bottom: solid 1px #bbb;
+}
+
+.grid .rss-link {
+background: url(/images/feed-icon-32x32.png) 50% no-repeat;;
+}
+
+.grid .rss-link:hover {
+background: #FFEE8F url(/images/feed-icon-32x32.png) 50% no-repeat;;
+}
+
+.grid .calendar-link {
+background: url(/images/icons/calendar-kiko.gif) 50% no-repeat;;
+}
+
+.grid .calendar-link:hover {
+background: #FFEE8F url(/images/icons/calendar-kiko.gif) 50% no-repeat;;
+}
+
+.grid h3 {
+margin-top: 3px;
+font: bold 16px arial;
+line-height: 15px;
+}
+
+#sharing_main .grid p {
+font: normal 11px arial;
+line-height: 11px;
+margin: 0;
+color: #555;
+}
+
+#sharing_main .grid ul {
+margin: 5px 0;
+padding: 0 0 0 20px;
+}
+
+.grid td img {
+margin-top: 20px;
+vertical-align: center;
+line-height: 100px;
+}
+
+#middle .grid select {
+font: normal 11px arial;
+padding: 0;
+margin-top: 1px;
+}
+
+.grid .details {
+padding: 5px 5px 5px 10px;
+border-bottom: solid 1px #ccc;
+background: #f0f0f0;
+text-align: left;
+}
+
+.grid textarea.code {
+width: 98%;
+height: 65px;
+}
+
+/* Form Header 
+   =========================== */
+
+.formTitle {
+padding: 1px 2px 1px 1px;
+background: #C5DBF7;
+
+}
+
+.formTitle input {
+font: bold 14px arial;
+letter-spacing: -1px;
+width: auto;
+padding: 0;
+color: #333;
+}
+
+.formTitle .defaultAction {
+font-weight: bold;
+}
+
+.formTitle .appointment-owner {
+padding: 2px 2px 3px 20px;
+margin: 0 2px;
+color: #333;
+font: bold 12px arial;
+}
+
+.user-source {
+background: url(/images/icons/user.gif) 0 50% no-repeat;
+}
+
+.feed-source {
+background: url(/images/feed-icon-16x16.png) 0 50% no-repeat;
+}
+
+/* Loading Page
+   =========================== */
+
+.loading-pane {
+border-top: solid 15px #C5DBF7;
+height: 200px;
+}
+
+div.loading-message {
+margin: 60px auto 0 auto;
+width: 160px;
+}
+
+p.loading-message {
+margin: 0;
+line-height: 12px;
+padding-left: 22px;
+color: #666;
+font: normal 10px verdana;
+}
+
+.loading-message .loading-indicator {
+padding: 1px 0 1px 20px;
+font: bold 18px arial;
+margin: 0;
+color: #000;
+text-transform: uppercase;
+background: url(/images/icons/indicator.gif) 0 50% no-repeat;
+}
+
+/* Form Layout
+   =========================== */
+
+.popups {
+padding: 0 10px 10px 10px;
+}
+
+.popups td {
+vertical-align: top;
+} 
+
+#leftCol {
+width: 65%;
+float: left;
+}
+
+#rightCol {
+width: 32%;
+float: right;
+}
+
+
+/* Generic Form Styling
+   =========================== */
+
+.popups input.text-input,
+.popups input.error,
+.popups textarea {
+font: bold 16px arial;
+width: 90%;
+border: solid 1px #6C94C0;
+padding: 1px;
+}
+
+.popups input.submit {
+font: bold 14px arial;
+letter-spacing: -1px;
+padding: 2px 3px;
+cursor: pointer;
+}
+
+#message .popups input.submit {
+margin-top: 5px;
+}
+
+* html .popups input.submit {
+padding: 0;
+}
+
+.popups select {
+font-size: 14px;
+font-weight: bold;
+font-family: arial;
+border: solid 1px #6C94C0;
+padding: 1px;
+}
+
+.popups textarea {
+font-size: 12px;
+height: 60px;
+}
+
+#message textarea {
+height: 140px;
+}
+
+.popups input.checkbox,
+.popups input.radio-button {
+border: none;
+}
+
+.popups h2 {
+font: bold 16px Trebuchet MS;
+margin-top: 10px;
+margin-bottom: 10px;
+}
+
+.popups h2 strong {
+font-size: 18px;
+}
+
+.popups div.subForm {
+margin: 0;
+padding-top:0;
+padding-left: 5px;
+padding-bottom: 5px;
+}
+
+.popups span,
+.popups p,
+.popups pre {
+font: bold 16px arial, sans-serif;
+margin: 0;
+}
+
+.popups p.notes,
+.popups p.notes a {
+font: normal 12px arial, sans-serif;
+}
+
+.popups .tip {
+font: normal 11px arial;
+color: #666;
+}
+
+.popups .tip a {
+font-size: 11px;
+}
+
+a.remove-link {
+display: block;
+margin-top: 2px;
+width: 14px;
+height: 14px;
+background: url(/images/close.gif) top left no-repeat;
+}
+
+h5, h6 {
+font-family: Tahoma;
+text-transform: uppercase;
+font-size: 10px;
+color: #000;
+padding: 1px 0 1px 0;
+margin: 8px 0 0 0;
+font-weight: normal;
+clear: left;
+}
+
+.subForm h6 {
+padding: 2px 0 0 0;
+margin: 0;
+color: #444;
+}
+
+#rightCol h4 {
+font-size: 14px;
+margin: 0;
+padding: 0;
+margin-top: 8px;
+}
+
+h5 {
+font-size: 11px;
+}
+
+h5.required {
+font-weight: bold;
+color: #333;
+}
+
+.popups a {
+font-size: 16px;
+font-weight: bold;
+}
+
+.popups a small {
+font-size: 10px;
+padding-right: 5px;
+}
+
+#rightCol a {
+font-size: 13px;
+}
+
+.popups a.blank,
+.popups #rightCol a.blank,
+.popups a.inlineEdit,
+.popups #rightCol a.inlineEdit {
+font-family: verdana;
+font-size: 11px;
+font-weight: normal;
+color: #999;
+font-style: italic;
+}
+
+.popups ins.error {
+display: block;
+}
+
+.popups table.list td {
+padding-right: 5px;
+font-size: 16px;
+font-weight: bold;
+vertical-align: middle;
+}
+
+.popups table.list .unvalidated td p {
+color: #999;
+} 
+
+.popups table.list .unvalidated td.message p {
+line-height: 10px;
+font-size: 10px;
+color: #666;
+}
+
+#middle .popups .help {
+font: bold 12px arial;
+padding: 3px 5px;
+background: #eee;
+border: solid 1px #bbb;
+margin: 5px 0;
+letter-spacing: 0;
+color: #444;
+}
+
+input.disabled-input {
+background: #eee;
+color: #999;
+}
+
+/* Feed Management
+   =========================== */
+
+.feed-detail {
+margin: 6px 0 3px 0;
+position: relative;
+padding-bottom: 3px;
+border-bottom: dotted 1px #aaa;
+
+padding-left: 28px;
+background: url(/images/feed-icon-24x24.png) 0 2px no-repeat;
+}
+
+.feed-detail .feed-title {
+line-height: 16px;
+}
+
+.feed-detail .feed-url {
+font: bold 11px verdana;
+letter-spacing: -1px;
+line-height: 14px;
+}
+
+.feed-detail .actions {
+top: 6px;
+right: 0;
+position: absolute;
+background: transparent;
+}
+
+.feed-detail .actions a {
+float: right;
+font-size: 14px;
+line-height: 14px;
+margin-right: 5px;
+}
+
+.feed-detail .actions a.remove-link {
+margin-top: 0;
+margin-left: 10px;
+}
+
+#middle .popups .feed-form {
+margin-top: 5px;
+}
+
+.popups .feed-form .text-input {
+width: 80%;
+}
+
+#feed_tab_panel .formTitle {
+margin-bottom: 10px;
+}
+
+#addFeedLink {
+font: bold 11px arial;
+font-style: normal;
+color: #0053A0;
+background: url(/images/icons/add.gif) -1px -1px no-repeat;
+padding-left: 18px;
+text-transform: uppercase;
+}
+
+#addFeedLink:hover {
+background: #FFEE8F url(/images/icons/add.gif) -1px -1px no-repeat;
+}
+
+/* Create Appointment
+   =========================== */
+
+.popups table.list small {
+font-size: 10px;
+text-transform: uppercase;
+}
+
+.popups table.list td.checkboxes {
+width: 150px;
+padding-left: 20px;
+}
+
+.popups table.list div.psuedoCheckboxesContainer div a {
+text-align: center;
+padding-left: 10px;
+background-position: 5px 2px;
+}
+
+/* Annotations
+   =========================== */
+
+table.annotations-table {
+padding: 0;
+margin: 0;
+}
+
+table.annotations-table small {
+width: 25px;
+margin-top: 2px;
+display: block;
+float: left;
+}
+
+table.annotations-table td {
+margin: 0;
+padding: 0;
+
+}
+
+table.annotations-table td.annotated-data {
+padding-right: 5px;
+}
+
+table.annotations-table td.annotated-indicator {
+width: 25px;
+background: url(/images/icons/annotation.gif) 50% 50% no-repeat;
+}
+
+table.annotations-table pre {
+margin: 0;
+padding: 0;
+display: inline;
+font-family: Arial;
+font-size: 16px;
+font-weight: bold;
+}
+
+/* Form Header
+   =========================== */
+
+.popups .header a {
+font-family: arial;
+font-size: 22px;
+}
+
+.popups .header p {
+font-family: arial;
+font-size: 22px;
+}
+
+.header {
+padding-bottom: 5px;
+border-bottom: dashed 1px #ccc;
+}
+
+.header input.text-input {
+font: bold 22px arial;
+width: 80%;
+}
+
+/* Contact private URL
+   =========================== */
+
+.private-url {
+float: right;
+clear: right;
+width: 220px;
+}
+
+.private-url h4 {
+font-size: 14px;
+padding: 3px 0;
+}
+
+/* User Status Box
+   =========================== */
+
+.user-status-box {
+float: right;
+width: 220px;
+}
+
+.user-status-box a { 
+font-size: 12px;
+}
+
+.user-status-box p{ 
+font-size: 12px;
+color: #555;
+padding: 12px 5px 12px 50px;
+}
+
+.user-status-box .no-user p {
+background: url(/images/icons/no-large.png) -3px 50% no-repeat;
+}
+
+.user-status-box .many-users p {
+background: url(/images/icons/maybe-large.png) -3px 50% no-repeat;
+}
+
+.user-status-box .one-user p {
+background: url(/images/icons/yes-large.png) -3px 50% no-repeat;
+}
+
+.user-status-box  h4 {
+font-size: 14px;
+padding: 3px 0;
+}
+
+#middle .user-status-box select {
+width: 200px;
+font-size: 14px;
+}
+
+#middle .user-status-box .invite-destination-type {
+width: 58px;
+font-size: 12px;
+}
+
+#middle .user-status-box .invite-destination {
+width: 133px;
+font-size: 12px;
+padding: 2px;
+}
+
+#middle .popups .user-status-box textarea {
+width: 195px;
+}
+
+.user-status-box .light-box-container {
+padding-left: 50px;
+padding-right: 20px;
+background: transparent;
+}
+
+.user-status-box .light-box-container div {
+float: none;
+margin-top: -10px;
+}
+
+.user-status-box .light-box-container div a{
+padding-left: 18px;
+background: url(/images/icons/user-add.gif) 0 50% no-repeat;
+}
+
+.user-status-box .light-box-container div.isApplied a {
+background: #E4F0FC url(/images/icons/user-add.gif) 0 50% no-repeat;
+}
+
+.user-status-box .light-box-container div a:hover {
+background: #FFEE8F url(/images/icons/user-add.gif) 0 50% no-repeat;
+}
+
+/* Special Box
+   =========================== */
+
+.contactMethodSelector {
+float: right;
+}
+
+.user-status-box .contactMethodSelector {
+float: none;
+}
+
+.contactMethodSelector h4 {
+font-size: 14px;
+padding: 3px 0;
+}
+
+.contactMethodSelect-body {
+border-left: 4px solid #6cc06c;
+padding: 0 5px 5px 5px;
+}
+
+.contactMethodSelect-body h6 {
+margin: 0;
+} 
+
+/* Form Elements : Feedback
+   =========================== */
+
+.popups .error {
+text-decoration: none;
+color: #f00;
+font-weight: bold;
+font-size: 11px;
+}
+
+.popups p.error,
+.popups p.notice,
+.popups p.notice a {
+font: bold 14px arial;
+margin: 5px 0;
+padding: 3px 5px;
+}
+
+.popups p.notice a {
+padding: 0;
+}
+
+.popups p.error {
+background: #faa;
+}
+
+.popups p.notice{
+background: #ff9;
+}
+
+.contact-open .popups p.notice{
+width: 50%;
+}
+
+.popups .example {
+color: #666;
+background: #fff;
+font-size: 10px;
+line-height: 11px;
+float: none;
+font-weight: normal;
+}
+
+.popups .example a {
+font-size: 10px !important;
+}
+
+.popups .example em {
+font-size: 10px;
+color: #333;
+font-style: normal;
+background: #ffc;
+}
+
+.popups .example strong {
+color: #000;
+}
+
+/* Sub Forms
+   =========================== */
+
+.popups .subForm input,
+.popups .subForm textarea {
+width: auto;
+}
+
+.subForm a.close,
+a.close {
+font-size: 12px;
+padding-left: 5px;
+}
+
+.subForm input.submit {
+padding: 0 2px 0 0;
+margin-top: 2px;
+}
+
+.subForm {
+margin-top: 3px;
+border-left: solid 4px #C5DBF7;
+}
+
+.subForm td {
+vertical-align: top;
+padding: 0 5px 3px 5px;
+}
+
+.formElement {
+float: left;
+margin-right: 5px;
+}
+
+.subForm div {
+font-size: 12px;
+font-family: arial;
+}
+
+.subForm .form-footer {
+margin-top: 3px;
+}
+
+/* Sub Forms : Tabs
+   =========================== */
+
+.subForm ul {
+margin: 0;
+padding: 1px 4px;
+display: block;
+clear: left;
+}
+
+.subForm li {
+list-style: none;
+float: left;
+}
+
+.subForm li a {
+font-family: Tahoma, verdana, arial, sans-serif;
+font-size: 14px;
+margin-right: 5px;
+padding: 1px 5px 1px 5px;
+border: 2px solid #C5DBF7;
+background: #fff;
+display: block;
+	opacity: 0.5;
+}
+
+.subForm li a:hover {
+padding: 1px 5px 1px 5px;
+}
+
+.subForm li.current a {
+background: #eee;
+color: #333;
+background: #E4F0FC;
+border: 2px solid #C5DBF7;
+opacity: 1;
+}
+
+/* Sub Forms : Special Inputs
+   =========================== */
+
+.subForm .date-element input {
+width: 160px;
+
+}
+
+.subForm .checkbox-element {
+margin-top: 15px;
+font-weight:bold;
+}
+
+.subForm .checkbox-element table td {
+padding: 0;
+font-size: 11px;
+vertical-align: middle;
+}
+
+.subForm .empty-message {
+margin: 5px 0 0 2px;
+color: #666;
+}
+
+/* Mini Calendar
+   =========================== */  
+
+.popups .MonthBox a.MonthBoxTodayText {
+display: none;
+}
+
+.popups .MonthBox .help {
+display: none;
+}
+
+.popups .MonthBox {
+width: 150px;
+float: left;
+}
+
+/* My Attendance Form
+   =========================== */
+
+.attendance-response-form {
+background-color: #eee;
+border-left: solid 4px #999;
+padding: 3px;
+margin: 5px 0;
+}
+
+.attendance-response-form .submit {
+float: right;
+margin-top: 3px;
+}
+
+.attendance-response-form .formElement {
+float: right;
+margin-top: -10px;
+padding-top: 0;
+}
+
+.attendance-response-form .text-input {
+font-size: 13px !important;
+}
+
+.attendance-response-form h3 {
+font-size: 16px;
+margin: 5px;
+}
+
+.attendance-response-form div.psuedoCheckboxesContainer div {
+float: right;
+margin-top: 2px;
+}
+
+.attendance-response-form div.psuedoCheckboxesContainer a {
+margin: 0;
+padding: 2px 10px 2px 23px;
+font-size: 15px;
+}
+
+div.psuedoCheckboxesContainer a.accept,
+div.psuedoCheckboxesContainer a.yes {
+background: #fff url(/images/icons/yes.gif) 5px 3px no-repeat;
+
+}
+
+div.psuedoCheckboxesContainer a.accept:hover,
+div.psuedoCheckboxesContainer a.yes:hover {
+background: #fff url(/images/icons/yes.gif) 5px 3px no-repeat;
+border: 2px solid #8f8;
+}
+
+div.psuedoCheckboxesContainer .isApplied a.accept,
+div.psuedoCheckboxesContainer .isApplied a.yes {
+background: #cfc url(/images/icons/yes.gif) 5px 3px no-repeat;
+border: 2px solid #8f8;
+}
+
+
+
+div.psuedoCheckboxesContainer a.decline,
+div.psuedoCheckboxesContainer a.no {
+background: #fff url(/images/icons/no.gif) 5px 3px no-repeat;
+}
+
+div.psuedoCheckboxesContainer a.decline:hover,
+div.psuedoCheckboxesContainer a.no:hover {
+background: #fff url(/images/icons/no.gif) 5px 3px no-repeat;
+border: 2px solid #f88;
+}
+
+div.psuedoCheckboxesContainer .isApplied a.decline,
+div.psuedoCheckboxesContainer .isApplied a.no {
+background: #fcc url(/images/icons/no.gif) 5px 3px no-repeat;
+border: 2px solid #f88;
+}
+
+
+
+div.psuedoCheckboxesContainer a.tenative {
+background: #fff url(/images/icons/maybe.gif) 6px 3px no-repeat;
+}
+
+div.psuedoCheckboxesContainer a.tenative:hover {
+background: #fff url(/images/icons/maybe.gif) 6px 3px no-repeat;
+border: 2px solid #F79537;
+}
+
+div.psuedoCheckboxesContainer .isApplied a.tenative {
+background: #fec url(/images/icons/maybe.gif) 6px 3px no-repeat;
+border: 2px solid #F79537;
+}
+
+/* Attendees Widget
+   =========================== */
+
+#main .attendees-form td.profile-link {
+width: 20px;
+}
+
+#main .attendees-form a.profile-link {
+background: url(/images/icons/vcard.gif) top left no-repeat;
+width: 16px;
+height: 16px;
+padding: 0 0 0 5px;
+display: block;
+}
+
+.status-icon,
+#invitations-sidebar-list .status-icon {
+width: 14px;
+height: 14px;
+display: block;
+border: solid 1px #999;
+margin-left: 0;
+}
+
+#invitations-sidebar-list .accept,
+.accept .status-icon {
+border: none;
+background: url(/images/icons/yes.gif) -1px -1px no-repeat;
+}
+
+#invitations-sidebar-list .decline,
+.decline .status-icon {
+border: none;
+background: url(/images/icons/no.gif) -1px -1px no-repeat;
+}
+
+
+#invitations-sidebar-list .tentative,
+.tentative .status-icon {
+background: url(/images/icons/maybe.gif) -1px -1px no-repeat;
+border: none;
+}
+
+.no-response .status-icon {
+background: url(/images/icons/no-response.gif) -1px -1px no-repeat;
+border: none;
+}
+
+.attendees-form input.attendee-input {
+width: 300px;
+}
+
+.attendees-form .no-matches {
+padding: 3px 1px;
+text-align: center;
+color: #666;
+font-size: 11px;
+background: #eee;
+width: 302px;
+}
+
+.attendees-form a.profile-link {
+padding-right: 15px;
+}
+
+.attendees-form .attendees-list td.edit-rights {
+padding: 1px 0;
+width: 60px;
+}
+
+#middle .attendees-form div.psuedoCheckboxesContainer div a {
+font-size: 11px;
+margin: 0;
+padding: 2px 4px;
+}
+
+#middle .attendees-form div.psuedoCheckboxesContainer div {
+margin: 0;
+}
+
+/* Yes/No Lightboxes
+   =========================== */
+
+#middle div.psuedoCheckboxesContainer a.no,
+#middle div.psuedoCheckboxesContainer a.yes {
+background-position: 3px 2px;
+text-align: left;
+padding-left: 22px;
+padding-right: 5px;
+}
+
+
+/* Autocomplete
+   =========================== */
+
+#middle .popups div.autoComplete {
+background: #eee;
+margin-top: -42px;
+margin-left: -195px;
+}
+
+#middle .popups .attendees-form div.autoComplete {
+width: 304px;
+margin: 0;
+border-top: none;
+background: #fff;
+}
+
+div.autoComplete ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+div.autoComplete div,
+div.autoComplete li {
+background: #eee;
+color: #0053A0;
+font-size: 14px;
+float: none;
+padding: 2px;
+}
+
+div.autoComplete .selected {
+background: #FFEE8F;
+font-weight: bold;
+border: solid 1px #0053A0;
+}
+
+.attendees-form div.autoComplete .selected {
+width: 298px;
+}
+
+.attendees-form input.selected {
+background: #FFEE8F;
+border: solid 1px #0053A0;
+}
+
+.attendees-form .attendees-list td {
+font-size: 14px;
+font-weight: bold;
+padding: 1px;
+}
+
+
+/* Psuedo checkboxes
+   =========================== */
+
+div.label,
+div.psuedoCheckboxesContainer div {
+	float: left;
+	position: relative;
+}
+
+div.psuedoCheckboxesContainer div {
+	display: inline;
+	margin: 0 3px 0 0;
+}
+
+div.label .labelColorSwatch,
+div.psuedoCheckboxesContainer .labelColorSwatch {
+	position: absolute;
+	top: 2px;
+	left: 1px;
+	width: 14px;
+	height: 14px;
+	border: outset 1px #c0c0c0;
+	cursor: pointer;
+}
+
+div.psuedoCheckboxesContainer .labelColorSwatch  {
+	width: 10px;
+	height: 10px;
+	top: 5px;
+	left: 3px;
+	font-size: 6px;
+}
+
+div.label a,
+div.label p {
+	padding-left: 20px;
+	margin-right: 5px;
+}
+
+div.psuedoCheckboxesContainer a {
+	font-size: 12px;
+	font-weight: bold;
+	padding: 2px;
+	margin-bottom: 2px;
+	border: 2px solid #C5DBF7;
+	background: #fff;
+	display: block;
+	opacity: 0.5;
+}
+
+div.psuedoCheckboxesContainer a:hover {
+	background: #FFEE8F;
+	opacity: 1;
+}
+
+div.psuedoCheckboxesContainer.labels a {
+	padding-left: 17px;
+}
+
+div.psuedoCheckboxesContainer .isApplied a,
+div.psuedoCheckboxesContainer a.isApplied {
+	background: #E4F0FC;
+	opacity: 1;
+}
+
+div.psuedoCheckboxesContainer {
+width: 98%;
+}
+
+
+/* Start/End
+   =========================== */
+
+table.start-end-form {
+width: 100%;
+}
+
+/* Recurrence
+   =========================== */
+
+table.recurrence-form {
+width: 375px;
+}
+ 
+div.psuedoCheckboxesContainer.recurrenceDays a {
+	width: 35px;
+	text-align: center;
+}
+
+.recurrence-form select {
+font-size: 12px;
+font-family: arial;
+}
+
+/* Reminders
+   =========================== */
+
+.reminder-box {
+margin-top: 5px;
+}
+
+.reminder-box .subForm {
+border-left: solid 4px #6cc06c;
+padding-left: 5px;
+padding-bottom: 5px;
+}
+
+.reminder-box select {
+width: 200px;
+font-size: 14px;
+}
+
+.reminder-box span {
+font: bold 14px arial;
+}
+
+/* Comments
+   =========================== */
+
+.event-comments div {
+margin-top: 3px;
+padding-left: 5px;
+padding-bottom: 3px;
+border-left: solid 4px #6cc06c;
+}
+
+#rightCol .event-comments textarea {
+margin: 4px 4px 0 0;
+width: 90%;
+}
+
+.event-comments ul {
+margin: 5px 0 0 0;
+padding: 0;
+list-style: none;
+}
+
+.event-comments li {
+padding: 2px 5px;
+margin: 0 0 5px 0;
+border-left: 4px solid #ddd;
+}
+
+.event-comments .comment {
+font-size: 12px;
+line-height: 14px;
+margin: 0;
+}
+
+.event-comments  .author {
+color: #0053A0;
+display: inline;
+font-size: 12px;
+}
+
+.event-comments .createdDate {
+display: inline;
+font-size: 11px;
+font-weight: normal;
+color: #666;
+}
+
+#rightCol .event-comments a.close {
+padding: 0;
+float: none;
+}
+
+/* Hackery Ahead
+   =========================== */
+
+/* Hides from IE5-mac \*/
+
+* html div.psuedoCheckboxesContainer a {
+filter: alpha(opacity=50);
+}
+
+* html div.psuedoCheckboxesContainer a:hover,
+* html div.psuedoCheckboxesContainer .isApplied a,
+* html div.psuedoCheckboxesContainer a.isApplied {
+	filter: alpha(opacity=100);
+}
+
+* html #leftCol, 
+* html #rightCol,
+* html .user-status-box,
+* html .private-url,
+* html .contactMethodSelector,
+* html div.header input,
+* html .header {
+position: relative;
+}
+
+* html .attendance-response-form,
+* html #contents,
+* html .reminder-box .subForm,
+* html .event-comments div,
+* html .popups h5,
+* html #main,
+* html .formTitle,
+* html .header,
+* html .user-status-box p,
+* html .user-status-box .subForm,
+* html .popupContent,
+* html #import_tab_panel .subForm,
+* html .popups ins.error,
+* html .event-comments li,
+* html .popups p.error,
+* html .popups p.notice,
+* html #middle .popups .feed-form  {
+height: 1%;
+}
+
+* html .attendance-response-form div.psuedoCheckboxesContainer {
+background: transparent;
+}
+
+* html .light-box-container {
+width: 220px;
+float: right;
+background: transparent;
+height: 1%;
+}
+
+* html div.psuedoCheckboxesContainer .labelColorSwatch {
+top: 6px;
+left: 5px;
+}
+
+* html div.psuedoCheckboxesContainer.labels a {
+	padding-left: 20px;
+}
+
+* html #middle div.psuedoCheckboxesContainer a.accept,
+* html #middle div.psuedoCheckboxesContainer a.yes,
+* html #middle div.psuedoCheckboxesContainer a.decline,
+* html #middle div.psuedoCheckboxesContainer a.no,
+* html #middle div.psuedoCheckboxesContainer a.tenative {
+background-position: 5px 5px;
+}
+
+* html .formElement {
+margin-right: 2px;
+}
+
+* html .checkbox-element {
+margin-right: 5px;
+}
+
+* html .attendance-response-form h3 {
+margin-bottom: 0;
+}
+
+* html #middle .popups div.psuedoCheckboxesContainer a.no,
+* html #middle .popups div.psuedoCheckboxesContainer a.yes {
+background-position: 5px 4px;
+padding-left: 22px;
+padding-right: 7px;
+}
+
+* html .user-status-box { 
+margin-top: 5px;
+}
+
+/* End hide from IE-mac */
+

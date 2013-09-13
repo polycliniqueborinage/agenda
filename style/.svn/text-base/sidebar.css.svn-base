@@ -1,0 +1,183 @@
+/* LEFT PART
+   =========================== */
+#left {
+position:fixed;
+top:130px;
+}
+
+#left-drawer td.drawer-content {
+width: 190px;
+padding-right: 2px;
+background-color:#b5cbe7;
+}
+
+#left-drawer td.drawer-handle {
+width: 10px;
+background: #5A94CE url(../images/arrow-right.gif) 3px 50% no-repeat;
+cursor: pointer;
+}
+
+.hide-sidebars #left-drawer td.drawer-handle {
+background: #5A94CE url(../images/arrow-left.gif) 3px 50% no-repeat;
+}
+
+#left-drawer td.drawer-handle .top-corner {
+height: 4px;
+width: 4px;
+position: absolute;
+background: url(../images/corner-top-right.gif) top right no-repeat;
+top: 0px;
+right: 0;
+}
+
+#left-drawer td.drawer-handle .bottom-corner {
+height: 4px;
+width: 4px;
+position: absolute;
+background: url(../images/corner-bottom-right.gif) bottom right no-repeat;
+bottom: 0;
+right: 0;
+}
+
+/* TOP LEVEL ACTION
+   =========================== */
+a.taskControl {
+margin: 0 2px 0 5px;
+padding: 2px 4px;
+display: block;
+background: transparent;
+font-weight: bold;
+text-transform: uppercase;
+font-size: 14px;
+}
+
+a.taskControl:hover {
+background: #FFEE8F;
+}
+
+/* SOUS MENU
+   =========================== */
+/* CADRE globaux
+   =========================== */
+div.sidebar {
+margin: 2px 0 0 5px;
+padding: 0;
+background: #fff;
+}
+
+div.sidebar h2 {
+text-align: left;
+padding: 2px 4px;
+}
+
+/* CADRE vert
+   =========================== */
+div.labels-green ,
+div.labels-sidebar {
+border: 1px solid #6cc06c;
+background-color: #c5f7c5;
+}
+
+/* CADRE rouge
+   =========================== */
+div.labels-red ,   
+div.contacts-sidebar {
+border: 1px solid #C7AC6B;
+background-color: #F8E9C6;
+}
+
+#information_patient ,
+#information_mutuelle ,
+#information_cecodi ,
+#information_medecin {
+text-align: left;
+padding-left:10px;
+}
+
+/* BOX
+   =========================== */
+.sidebar div.inlineForm {
+font-size: 10px;
+display: block;
+padding-bottom: 0;
+background: #f0f0f0;
+border-bottom: solid 1px #aaa;
+border-left: solid 3px #bbb;
+}
+
+div.sidebar div.inlineForm .button {
+width: auto;
+border: none;
+color: #0053A0;
+font-family: Verdana, sans-serif;
+font-size: 10px;
+padding: 0;
+margin: 0;
+background: transparent;
+text-transform: uppercase;
+cursor: pointer;
+}
+
+/* Side Bar Controls
+   =========================== */
+.controls {
+text-align: right;
+margin: 5px 4px 2px 0;
+font-size: 12px;
+float: right; 
+background: transparent; 
+position: relative;
+}          
+
+
+/* Hackery Ahead
+   =========================== */
+
+/* Hides from IE5-mac \*/
+* html div#label_list_container,
+* html div#contact_tree_container,
+* html div.sidebar,
+* html .sidebar div.inlineForm,
+* html .TreeNodeContainer span,
+* html .TreeNodeContainer a.contactName,
+* html #my-calendar-sidebar,
+* html #add-contact-sidebar-list li,
+* html .labels-sidebar .label,
+* html .feeds-sidebar .feed,
+* html .TreeNodeTitle,
+* html .TreeNodeHeader {
+  height: 1%;
+}
+
+* html .labels-sidebar div.labelColorSwatch,
+* html .feeds-sidebar div.labelColorSwatch {
+	filter: alpha(opacity=40);
+}
+
+
+* html a.taskControl div {
+margin-right: 0;
+}
+
+* html #left-drawer td.drawer-handle .corners-wrapper {
+display: block;
+}
+
+* html #left-drawer td.drawer-handle .top-corner,
+* html #left-drawer td.drawer-handle .bottom-corner {
+display: none;
+}
+
+* html #left-drawer td.drawer-handle .corners-wrapper .top-corner {
+top: 0;
+display: block;
+right: -1px;
+}
+
+* html #left-drawer td.drawer-handle .corners-wrapper .bottom-corner {
+right: -1px;
+display: block;
+}
+
+
+/* End hide from IE-mac */               

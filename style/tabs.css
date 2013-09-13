@@ -1,0 +1,134 @@
+#main {
+	border: 1px solid #6C94C0;
+	padding-bottom: 5px;
+}
+
+#header {
+	position: relative;
+	width: 100%;
+	height: 2.1em;
+	background-color: transparent;
+}
+
+/* Top Row */
+
+#header ul#primary_tabs {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	bottom: -1px;
+}
+
+* html #header ul#primary_tabs {
+    bottom: -2px;
+}
+
+#header ul#primary_tabs li {
+    font-size: 11px;
+    float: left;
+    position: relative;
+	display: inline;
+	border: 0;
+	font-family: "Trebuchet MS", verdana;
+	color: #101010;
+	padding: 0;
+	margin: 3px 0 0 0;
+}
+
+#header ul#primary_tabs a,
+#header ul#primary_tabs li.current a {
+	margin: 1px 2px 0 0;
+	padding: 1px 18px 1px 3px;
+	float: left;
+	text-align: center;
+}	
+
+#header ul#primary_tabs li.current a,
+#header ul#primary_tabs li.current a:hover {
+	border: 1px solid #6C94C0;
+	border-bottom: none;
+	background: #C5DBF7;
+	padding-bottom: 3px;
+	margin-top: 1px;
+	text-decoration: none;
+	color: #000;
+	cursor: default;
+}
+
+#header ul#primary_tabs a {
+	background: #f0f0ff; 
+	border: 1px solid #6C94C0;
+	border-bottom: none;
+	margin-top: 2px;
+}
+
+#header ul#primary_tabs a:hover {
+	background: #c5f7c5;
+}
+
+
+/* Static Tabs */
+
+#header ul#primary_tabs li.nodelete {
+        position: static;
+        font-size: 13px;
+        padding: 0;
+        margin: 0;
+}
+
+#header ul#primary_tabs li.nodelete a,
+#header ul#primary_tabs li.current a.nodelete,
+#header ul#primary_tabs li.current a.nodelete:hover {
+        padding: 2px 0 1px 0;
+        margin: 2px 2px 0 0;
+        width: 6em;
+        float: left;
+        text-align: center;
+}       
+
+#header ul#primary_tabs li.current a.nodelete,
+#header ul#primary_tabs li.current a.nodelete:hover {
+        padding-bottom: 2px;
+}
+
+/* Secondary Tabs */
+
+#main .secondary-tabs {
+padding: 2px 2px 2px 2px;
+font-size: 10px;
+height: 15px;
+background: #C5DBF7;
+font-family: verdana, arial, sans-serif;
+}
+
+#main .secondary-tabs ul {
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+#main .secondary-tabs ul li {
+display: inline;
+}
+
+#main .secondary-tabs ul li.current a {
+background: #fff;
+padding-bottom: 3px;
+color: #000;
+cursor: default;
+}
+
+#main .secondary-tabs a,
+#main .secondary-tabs span {
+padding: 1px 10px;
+}
+
+#main .secondary-tabs span {
+background: #fff;
+padding-bottom: 5px;
+}
+
+#main .secondary-tabs a:hover {
+	background: #c5f7c5;
+	padding-bottom: 3px;
+}

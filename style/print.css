@@ -1,0 +1,65 @@
+/* Upcoming Calendar
+   =========================== */
+
+#logged-out #calendar-owner-display {
+width: 100%;
+top: 5px;
+display: block !important;
+}
+
+body {
+background: #fff;
+}
+
+div {
+background: transparent;
+}
+
+#appointment_quick_create,
+#primary_tabs,
+.formTitle,
+a.addAppointment,
+.calendar-actions,
+#calendarSideBar,
+.form-actions,
+.reminder-box,
+a.blank,
+.event-comments a.inlineEdit,
+.user-status-box,
+.help,
+#ribbon, 
+#help-toggle,
+.attendance-response-form,
+#signup-teaser,
+#left-drawer {
+display: none !important;
+}
+
+#middle {
+margin-left: 5px !important;  
+}
+
+#top { 
+height: 25px; 
+background: #B5CBE7 url(/images/branding/logo-small.gif) bottom right no-repeat !important;
+}
+
+#logged-out #top {
+height: 40px;
+}
+
+.popups {
+margin-top: 15px;
+}
+
+#main {
+border: none;
+}
+
+#middle {
+margin-left: 5px;
+}
+
+.calendarViewPane {
+margin-right: 5px !important;
+}
